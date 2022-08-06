@@ -1,3 +1,118 @@
-.App {
+/* stylelint-disable property-no-vendor-prefix */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('./images/background.png');
+}
+
+/* header do site */
+header {
+  background-color: black;
+  width: 100%;
+}
+
+header h1 {
+  color: white;
+  font-size: 40px;
+  padding: 20px 0;
   text-align: center;
+}
+
+/* banner principal */
+.containerSolarSystem {
+  padding: 50px 0;
+}
+
+.solarSystem {
+  display: flex;
+  max-width: 100%;
+  padding: 10px 2%;
+}
+
+.planetCard img {
+  max-width: 100%;
+}
+
+.solarSystem img:hover {
+  cursor: pointer;
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.5);
+  transition: 0.8s;
+}
+
+.planetCard {
+  border-radius: 20px;
+}
+
+.planetCard p {
+  color: white;
+  margin-top: 10px;
+  text-align: center;
+}
+
+
+/* cartões das missões */
+.titleH2 {
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.mission {
+  display: flex;
+  flex-wrap: wrap;
+  height: 720px;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.cardMission {
+  border: 4px solid white;
+  border-style: dotted;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin: 10px 1%;
+  padding: 0 0 2px;
+  width: 150px;
+}
+
+.cardMission:hover {
+  border-style: solid;
+  cursor: pointer;
+  margin: 20px 2%;
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+.cardMission p {
+  color: white;
+  text-align: center;
+}
+
+.mission-name {
+  background-color: rgb(46, 44, 44);
+  font-weight: 800;
+  padding: 10px 0;
+}
+
+.mission-year, .mission-country, .destination {
+  padding: 12px 0 2px;
+}
+
+/* Footer */
+footer {
+  background-color: white;
+  font-weight: 700;
+  margin-top: 80px;
+  padding: 15px;
+  text-align: center;
+  width: 100%;
 }
